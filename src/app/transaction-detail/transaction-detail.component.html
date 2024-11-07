@@ -1,0 +1,10 @@
+<p>D&eacute;tail de la transaction {{ transactionId }}</p>
+<span>{{ transaction.date }}</span><br>
+<span>{{ transaction.amount }}</span><br>
+<span>{{ transaction.balance }}</span><br>
+<span>{{ transaction.description }}</span><br>
+<span>{{ transaction.label }}</span>
+
+@if (transactions$ | async) {
+    <p>D&eacute;tail de la transaction {{ transactionId }}</p>
+}
